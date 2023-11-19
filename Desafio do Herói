@@ -1,0 +1,24 @@
+let nomeHeroi = prompt("Digite o seu nome: ");
+let expHeroi = prompt("Digite seu nível de xp: ")
+
+expHeroi = parseInt(expHeroi);
+
+let nvlHeroi;
+
+if (expHeroi < 1000) {
+    nvlHeroi = "Ferro";
+} else if (expHeroi >= 1001 && expHeroi <= 2000) {
+    nvlHeroi = "Bronze";
+} else if (expHeroi >= 2001 && expHeroi <= 5000) {
+    nvlHeroi = "Prata Ouro";
+} else if (expHeroi >= 5001 && expHeroi <= 8000) {
+    nvlHeroi = "Platina Diamante";
+} else if (expHeroi >= 8001 && expHeroi <= 9000) {
+    nvlHeroi = "Ascendente";
+} else if (expHeroi>= 9001 && expHeroi <= 10000) {
+    nvlHeroi = "Imortal";
+} else {
+    nvlHeroi = "Radiante";
+}
+
+console.log("O herói de nome " + nomeHeroi + " está no nível de " + nvlHeroi);
